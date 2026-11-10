@@ -1,0 +1,4 @@
+let reviews=[],reviewIndex=0;
+function moveReview(direction){if(!reviews.length)return;reviewIndex=(reviewIndex+direction+reviews.length)%reviews.length;const review=reviews[reviewIndex];document.querySelector('#review-text').textContent=review.text||'Valoración sin comentario.';const author=document.querySelector('#review-author');author.textContent=review.author+' · Google ↗';author.href=review.source;document.querySelector('#review-count').textContent=String(reviewIndex+1).padStart(2,'0')+' / '+reviews.length;const stars=document.querySelector('#review-stars');stars.textContent='★'.repeat(review.rating)+'☆'.repeat(5-review.rating);stars.setAttribute('aria-label',review.rating+' estrellas');}
+document.querySelector('#review-prev').addEventListener('click',()=>moveReview(-1));document.querySelector('#review-next').addEventListener('click',()=>moveReview(1));
+fetch('assets/reviews.json').then(r=>r.json()).then(data=>{reviews=data;moveReview(0)}).catch(()=>{});

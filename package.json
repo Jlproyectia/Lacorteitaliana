@@ -1,0 +1,8 @@
+{
+  "name": "la-corte-italiana",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Web de La Corte Italiana, Fuengirola",
+  "scripts": { "start": "node preview.mjs", "dev": "node preview.mjs" },
+  "engines": { "node": ">=18" }
+}
