@@ -79,3 +79,5 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-wrap:break-word}.header{g
 .food .section-heading h2,.reels-heading h2{font-size:clamp(58px,7.6vw,116px);line-height:1.03;letter-spacing:-.035em;white-space:normal;text-wrap:balance;max-width:none}.food .section-heading{align-items:flex-end;gap:30px}.food .section-heading>div:first-child{flex:1;min-width:0}.reels-heading{align-items:flex-end;gap:30px}.reels-heading>div:first-child{min-width:0;flex:1}
 @media(max-width:1100px){.food .section-heading,.reels-heading{display:flex;flex-direction:column;align-items:flex-start}.food-intro{margin-top:0}.reels-intro{margin-top:18px}}
 @media(max-width:800px){.food .section-heading h2,.reels-heading h2{font-size:clamp(53px,11vw,80px);line-height:1.04;margin-top:20px;white-space:normal;text-wrap:balance;max-width:100%}.food .section-heading{gap:24px}.reels-heading{gap:0}.reels-intro{margin-top:26px}}
+
+.footer .footer-columns{margin-top:12px}@media(max-width:800px){.footer .footer-columns{margin-top:10px}}
