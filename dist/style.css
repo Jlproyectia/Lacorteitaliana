@@ -81,3 +81,5 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-wrap:break-word}.header{g
 @media(max-width:800px){.food .section-heading h2,.reels-heading h2{font-size:clamp(53px,11vw,80px);line-height:1.04;margin-top:20px;white-space:normal;text-wrap:balance;max-width:100%}.food .section-heading{gap:24px}.reels-heading{gap:0}.reels-intro{margin-top:26px}}
 
 .footer .footer-columns{margin-top:12px}@media(max-width:800px){.footer .footer-columns{margin-top:10px}}
+
+.review-motion-stage{position:relative;min-width:0}.review-motion-slide{opacity:1;transform:none}.review-motion-slide .review-stars{margin-top:20px}.review-body{touch-action:pan-y pinch-zoom}.review-body:focus-visible{outline:2px solid var(--red);outline-offset:10px}
