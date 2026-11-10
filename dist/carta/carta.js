@@ -423,7 +423,7 @@ const items=[
 ]
 ;
 const requestedCategory=new URLSearchParams(location.search).get('categoria');let selected=categories.includes(requestedCategory)?requestedCategory:categories[0],lastFocus;
-const $=s=>document.querySelector(s),input=$('#search'),panel=$('#categories'),toggle=$('#category-button'),grid=$('#dishes'),dialog=$('dialog');
+const $=s=>document.querySelector(s),input=$('#search'),panel=$('#categories'),toggle=$('#category-button'),grid=$('#dishes'),dialog=$('dialog[aria-labelledby="dish-title"]');
 const normalize=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 function close(){panel.hidden=true;toggle.setAttribute('aria-expanded','false')}
 toggle.addEventListener('click',()=>{panel.hidden=!panel.hidden;toggle.setAttribute('aria-expanded',String(!panel.hidden))});
